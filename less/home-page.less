@@ -17,15 +17,33 @@
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        margin-left: -100px;
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+      }
+
       img {
         border-radius: 10px;
+        
+        @media @mobile {
+          margin-top: 189px;
+          margin-left: -250px;
+           
+        }
       }
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border; 
+     
+    @media @mobile {
+      border-bottom: 2px dashed @navigation-border;
+      
+    }
 
     .text-content {
       padding-left: 1%;
@@ -53,9 +71,108 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;  
+     
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width:320px; 
+      }
     }
   }
 }// home
+
+  
+  header h1 {
+    font-family: 'Indie Flower';
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    margin-top: -40px;
+    font-size: 32px;
+    text-align: center;
+    margin-left: -933px;
+    margin-bottom: -39px; 
+    
+  }
+
+  .headerimage {
+
+    margin-left: 145px;
+    margin-bottom: 2px;
+    margin-top: 48px;
+
+    @media @mobile { 
+      margin-left: 3px;
+      width: 98%; 
+  }
+    }
+
+    header h2 {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+    margin-left: 150px;
+    margin-top: 23px;
+
+    @media @mobile { 
+      margin-left: 3px;
+  }
+}
+
+  header p {
+    margin-left: 150px; 
+    margin-right: 199px; 
+    border-bottom: 2px dashed silver;
+   
+    @media @mobile { 
+      margin-left: 6px;
+      width: 452px; 
+
+  }
+  }
+
+  .text-content3 h2 {
+    @media @mobile {
+      margin-left: 3px; 
+      margin-bottom: 41px; 
+    }
+  }
+
+  .text-content3 p {
+    @media @mobile {
+      width: 493px;
+      margin-bottom: 53px;
+      margin-top: -50px;
+  }
+  }
+
+  .text-content2 h2 {
+
+    @media @mobile {
+      margin-left: -240px; 
+    }
+
+  }
+
+  .text-content2 p {
+    @media @mobile {
+      margin-left: -247px; 
+      width: 474px; 
+      margin-top: 4px; 
+      margin-bottom: 12px; 
+    }
+  }
+
+  content-pick {
+
+  @media @mobile {
+    border-top: none; 
+    margin-top: 100px; 
+  }
+  }
+
